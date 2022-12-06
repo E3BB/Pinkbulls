@@ -32,4 +32,7 @@ Two:
 Probably. The game is in early-development. Don't ask yet. I'll also change the document as I make new ideas.
 
 	Where can I find Pinkbulls?
-On Itch.io and probably Github [Source code]
+On Itch.io and Github [Source code]
+
+	Will this be a pixel game, like all your others?
+It will. I don't remember how to computer draw anymore. Pixel strokes are hard.
