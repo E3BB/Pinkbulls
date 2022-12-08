@@ -4,7 +4,6 @@
 [ext_resource path="res://Scenes/Player/PlayerScripts/Player.gd" type="Script" id=2]
 
 [node name="Player" type="KinematicBody2D"]
-position = Vector2( 118, 79 )
 script = ExtResource( 2 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
