@@ -1,21 +1,26 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Scenes/Part1/Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/Part1/World/WorldResources/PartOneBG.png" type="Texture" id=2]
+[ext_resource path="res://Scenes/Sprite-0001.png" type="Texture" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 1024, 39 )
 
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 10, 130.5 )
+
 [node name="Node2D" type="Node2D"]
 
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
+[node name="Terrain" type="StaticBody2D" parent="."]
+position = Vector2( 1653, -42 )
 scale = Vector2( 2, 2 )
 
-[node name="PartOneBg" type="Sprite" parent="StaticBody2D"]
+[node name="PartOneBg" type="Sprite" parent="Terrain"]
 position = Vector2( 35, -9 )
 texture = ExtResource( 2 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Terrain"]
 position = Vector2( 35, 80 )
 shape = SubResource( 1 )
 
@@ -31,3 +36,16 @@ margin_left = -112.0
 margin_top = -61.0
 margin_right = -106.0
 margin_bottom = -47.0
+
+[node name="LStopper" type="StaticBody2D" parent="."]
+position = Vector2( -19, 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LStopper"]
+position = Vector2( 0, -90.5 )
+shape = SubResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="LStopper"]
+position = Vector2( 0, -90 )
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 20.4468, 264.554 )
