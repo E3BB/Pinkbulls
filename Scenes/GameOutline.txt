@@ -11,7 +11,7 @@ Well, I'll split it into parts one and two:
 
 One:
 - Pinkbull gun: Has upward arc, makes dogs float
-- Cloud-jumpers: Boots with Pinkbull and Yellowrum soles [You can double-jump]
+- Cloud-jumpers: Boots with Pinkbull and Yellowrum soles [You can jump mid-air, but only _ times per lab trip]
 - Dog spit: Dogs can spit at you like llamas. Hard. Avoid it, else your gravity filps and you need cloud-jumpers.
 - Platforms everywhere to jump off of
 - Hang-gliding stations & Elevators: The earth's not even
